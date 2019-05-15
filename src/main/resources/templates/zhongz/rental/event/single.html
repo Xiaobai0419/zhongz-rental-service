@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{include::header(~{::title})}">
+	<title th:text="${event.name}"></title>
+</head>
+<style>
+h1,h2,h3,h4,h5,h6{
+	font-size:20px;
+	display:inline-block;
+	width:100%;
+	line-height:30px;
+}
+p{
+	display:inline-block;
+	width:100%;
+	font-size:14px;
+	line-height:20px;
+}
+.event_content{
+	position:relative;
+	width:100%;
+	min-height:100vh;
+	padding:0 5% 9vh;
+	color:#000;
+	font-size:14px;
+	line-height:20px;
+}
+.event_bottom{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:9vh;
+	background-color:#fea408;
+	color:#fff;
+	text-align:center;
+	line-height:9vh;
+	font-size:5vw;
+	font-weight:bold;
+}
+img{width:100%;margin-bottom:10px;}
+</style>
+<body class="white-bg">
+	<input type="hidden" id="eventId" th:value="${event.id}">
+	<div class="event_content" th:utext="${event.description}"></div>
+	<div class="event_bottom" onclick="clickMe();">查看活动房源</div>
+	<div th:include="include::footer"></div>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.5.0.js"></script>
+    <script type="text/javascript">
+        function clickMe() {
+            var url = '/pages/tenancy_activity/tenancy_activity?eventId=' + $('#eventId').val();
+            console.log(url);
+            wx.miniProgram.navigateTo({url: url});
+        }
+	</script>
+</body>
+</html>

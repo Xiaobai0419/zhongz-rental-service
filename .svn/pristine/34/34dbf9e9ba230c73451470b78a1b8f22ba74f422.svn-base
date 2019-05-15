@@ -1,0 +1,67 @@
+package com.zhongz.rental.rest;
+
+import com.ruoyi.common.core.controller.BaseController;
+import com.zhongz.rental.domain.ZhongzHouse;
+import com.zhongz.rental.param.ZhongzHouseParam;
+import com.zhongz.rental.param.ZhongzHouseRentType;
+import com.zhongz.rental.service.IZhongzHouseService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+/**
+ * 房屋 信息操作处理
+ * 
+ * @author ruoyi
+ * @date 2019-04-04
+ */
+@Api(tags = "zhongz-house")
+@Controller
+@RequestMapping("/system/zhongzHouse")
+public class ZhongzHouseController extends BaseController
+{
+
+	@Autowired
+	private IZhongzHouseService zhongzHouseService;
+	
+	/**
+	 * 查询房屋列表
+	 */
+	@ApiOperation(value="查询、搜索、筛选、排序、活动相关房屋列表")
+	@ApiImplicitParam(name = "zhongzHouseParam", value = "", required = true, dataType = "ZhongzHouseParam")
+	@PostMapping("/list")
+	@ResponseBody
+	public List<ZhongzHouse> list(ZhongzHouseParam zhongzHouseParam)
+	{
+		return zhongzHouseService.selectZhongzHouseRentList(zhongzHouseParam);
+	}
+
+	/**
+	 * 查询单个房屋租期类别列表
+	 */
+	@ApiOperation(value="查询单个房屋租期类别列表")
+	@ApiImplicitParam(name = "id", value = "", required = true, dataType = "String")
+	@PostMapping("/listRentType")
+	@ResponseBody
+	public List<ZhongzHouseRentType> listRentType(String id)
+	{
+		return zhongzHouseService.selectZhongzHouseRentTypesById(id);
+	}
+
+	/**
+	 * 查询房屋详情
+	 */
+	@ApiOperation(value="查询房屋详情")
+	@ApiImplicitParam(name = "id", value = "", required = true, dataType = "String")
+	@PostMapping("/single")
+	@ResponseBody
+	public ZhongzHouse single(String id)//key/value形式调用，需要指定变量名为id
+	{
+		return zhongzHouseService.selectZhongzHouseById(id);
+	}
+}

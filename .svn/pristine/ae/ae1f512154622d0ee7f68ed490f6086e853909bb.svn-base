@@ -1,0 +1,40 @@
+logging:
+  level:
+    com:
+      zhongz:
+        rental:
+          mapper: debug
+mybatis:
+  configLocation: classpath:mapper/mybatis-config.xml
+  mapperLocations: classpath*:mapper/**/*Mapper.xml
+  typeAliasesPackage: com.zhongz.rental
+server:
+  port: 10001
+spring:
+  application:
+    name: zhongz-rental-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat,wall,slf4j
+    initialSize: 5
+    logSlowSql: true
+    maxActive: 20
+    maxWait: 60000
+    minEvictableIdleTimeMillis: 300000
+    minIdle: 5
+    password: 123456
+    testOnBorrow: false
+    testOnReturn: false
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://172.16.175.22:3306/zhongzhu?useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    username: zhongzhu
+    validationQuery: SELECT 1 FROM DUAL
+swagger:
+  basepackage: com.zhongz.rental.rest
+  contact: www.china-dt.com/
+  description: 中筑-知邸公寓API
+  termsOfServiceUrl: http://www.china-dt.com/
+  title: 中筑-知邸公寓API
+  version: 1.0.0

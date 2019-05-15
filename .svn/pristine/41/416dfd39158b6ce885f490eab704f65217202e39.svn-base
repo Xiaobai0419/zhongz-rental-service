@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+    <div class="wrapper wrapper-content animated fadeInRight ibox-content">
+        <form class="form-horizontal m" id="form-zhongzOrder-add" th:object="${event}">
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">活动名称：</label>
+				<div class="col-sm-8">
+					<span th:text="${event.name}"></span>
+				</div>
+			</div>
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">活动详情：</label>
+				<div class="col-sm-8">
+					<span th:text="${event.description}"></span>
+				</div>
+			</div>
+			<input type="hidden" id="eventId"  th:field="*{id}">
+		</form>
+	</div>
+	<div class="wrapper wrapper-content animated fadeInRight ibox-content" onclick="clickMe();">点击跳转到小程序活动房源</div>
+	<div th:include="include::footer"></div>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.5.0.js"></script>
+    <script type="text/javascript">
+        function clickMe() {
+            var url = '/pages/tenancy_activity/tenancy_activity?eventId=' + $('#eventId').val();
+            console.log(url);
+            wx.miniProgram.navigateTo({url: url});
+        }
+	</script>
+</body>
+</html>

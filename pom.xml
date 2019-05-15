@@ -1,0 +1,111 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.zhongz.rental</groupId>
+  <artifactId>zhongz-rental-service</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+  <name>zhongz-rental-service</name>
+  
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter-parent</artifactId>
+  	<version>2.1.1.RELEASE</version>
+  </parent>
+  
+  <properties>
+    <zhongz.common.version>1.0.0</zhongz.common.version>
+    <mybatis.boot.version>1.3.2</mybatis.boot.version>
+    <druid.version>1.1.13</druid.version>
+	<main.class>com.zhongz.rental.ServiceApplication</main.class>
+  </properties>
+  
+  <dependencies>
+    <!-- 通用类-->
+    <dependency>
+        <groupId>com.zhongz.rental</groupId>
+        <artifactId>zhongz-rental-common</artifactId>
+    </dependency>
+    <!--阿里数据库连接池 -->
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>druid-spring-boot-starter</artifactId>
+    </dependency>
+  	<dependency>
+   		<groupId>org.springframework.boot</groupId>
+      	<artifactId>spring-boot-starter-web</artifactId>
+  	</dependency>
+	<dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+	</dependency>
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.9.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-configuration-processor</artifactId>
+        <optional>true</optional>
+    </dependency>
+    <!-- SpringBoot集成thymeleaf模板 -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
+  </dependencies>
+  
+  <dependencyManagement>
+  	<dependencies>
+        <!-- SpringBoot的依赖配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>2.1.1.RELEASE</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+        <!-- 通用类-->
+        <dependency>
+            <groupId>com.zhongz.rental</groupId>
+            <artifactId>zhongz-rental-common</artifactId>
+            <version>${zhongz.common.version}</version>
+        </dependency>
+        <!--阿里数据库连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+     </dependencies>
+  </dependencyManagement>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      
+      <plugin> 
+      	<groupId>org.springframework.boot</groupId> 
+      	<artifactId>spring-boot-maven-plugin</artifactId> 
+      	<configuration> 
+      		<fork>true</fork> 
+      		<mainClass>${main.class}</mainClass> 
+      	</configuration> 
+      	<executions> 
+      		<execution> 
+		      	<goals> 
+		      		<goal>repackage</goal> 
+		      	</goals> 
+	      	</execution> 
+      	</executions> 
+      </plugin>
+    </plugins>
+    
+  </build>
+</project>

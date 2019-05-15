@@ -1,0 +1,40 @@
+package com.zhongz.rental.rest;
+
+import java.util.List;
+
+import com.zhongz.rental.domain.ZhongzUser;
+import com.zhongz.rental.service.IZhongzUserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import com.ruoyi.common.core.controller.BaseController;
+import com.ruoyi.common.core.page.TableDataInfo;
+
+/**
+ * 用户 信息操作处理
+ * 
+ * @author ruoyi
+ * @date 2019-04-15
+ */
+@Controller
+@RequestMapping("/system/zhongzUser")
+public class ZhongzUserController extends BaseController
+{
+
+	@Autowired
+	private IZhongzUserService zhongzUserService;
+
+	/**
+	 * 查询用户列表
+	 */
+	@PostMapping("/list")
+	@ResponseBody
+	public TableDataInfo list(ZhongzUser zhongzUser)
+	{
+		startPage();
+        List<ZhongzUser> list = zhongzUserService.selectZhongzUserList(zhongzUser);
+		return getDataTable(list);
+	}
+}

@@ -1,0 +1,73 @@
+package com.zhongz.rental.rest;
+
+import java.util.List;
+
+import com.zhongz.rental.domain.ZhongzCoupon;
+import com.zhongz.rental.param.ZhongzUserOrderParam;
+import com.zhongz.rental.result.base.Result;
+import com.zhongz.rental.service.IZhongzCouponService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import com.ruoyi.common.core.controller.BaseController;
+
+/**
+ * 优惠券 信息操作处理
+ * 
+ * @author ruoyi
+ * @date 2019-04-12
+ */
+@Api(tags = "zhongz-coupon")
+@Controller
+@RequestMapping("/system/zhongzCoupon")
+public class ZhongzCouponController extends BaseController
+{
+	@Autowired
+	private IZhongzCouponService zhongzCouponService;
+	
+	/**
+	 * 查询用户已使用优惠券列表
+	 *
+	 * @param zhongzUserOrderParam 用户信息
+	 * @return 优惠券集合
+	 */
+	@ApiOperation(value="查询用户已使用优惠券列表")
+	@PostMapping("/listUsed")
+	@ResponseBody
+	public Result<ZhongzCoupon> selectZhongzUserCouponUsedList(ZhongzUserOrderParam zhongzUserOrderParam)
+	{
+		return zhongzCouponService.selectZhongzUserCouponUsedList(zhongzUserOrderParam);
+	}
+
+	/**
+	 * 查询用户未使用优惠券列表
+	 *
+	 * @param zhongzUserOrderParam 用户信息
+	 * @return 优惠券集合
+	 */
+	@ApiOperation(value="查询用户未使用优惠券列表")
+	@PostMapping("/listNotUsed")
+	@ResponseBody
+	public Result<ZhongzCoupon> selectZhongzUserCouponNotUsedList(ZhongzUserOrderParam zhongzUserOrderParam)
+	{
+		return zhongzCouponService.selectZhongzUserCouponNotUsedList(zhongzUserOrderParam);
+	}
+
+	/**
+	 * 查询用户已过期优惠券列表
+	 *
+	 * @param zhongzUserOrderParam 用户信息
+	 * @return 优惠券集合
+	 */
+	@ApiOperation(value="查询用户已过期优惠券列表")
+	@PostMapping("/listExpired")
+	@ResponseBody
+	public Result<ZhongzCoupon> selectZhongzUserCouponExpiredList(ZhongzUserOrderParam zhongzUserOrderParam)
+	{
+		return zhongzCouponService.selectZhongzUserCouponExpiredList(zhongzUserOrderParam);
+	}
+}

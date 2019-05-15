@@ -1,0 +1,1747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="00f020bb-f29a-48ab-89c5-aabbe63364bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/Md5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/PayToolUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/WechatPayUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/XMLUtil4jdom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/IWXPayDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayConfigImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayXmlUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzPictureParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzUserServiceOrderWechatPayParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/result/PictureResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/result/WechatPrePayResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/IZhongzPictureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzPictureServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zhongz-rental-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zhongz-rental-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzUserServiceOrderParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzUserServiceOrderParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/IZhongzServiceOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/IZhongzServiceOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzServiceOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzServiceOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zhongz-rental-common/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../zhongz-rental-common/src/main/resources/config/application.yml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/../zhongz-rental-common/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="311" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2105024416">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="43" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="17" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.2" value="8" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.70" value="1" />
+          <entry key="project.opened" value="48" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="96" />
+          <entry key="css" value="1" />
+          <entry key="html" value="7" />
+          <entry key="ico" value="1" />
+          <entry key="java" value="1375" />
+          <entry key="js" value="1" />
+          <entry key="png" value="1" />
+          <entry key="xml" value="253" />
+          <entry key="yml" value="84" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="96" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="7" />
+          <entry key="Image" value="2" />
+          <entry key="JAVA" value="1375" />
+          <entry key="JavaScript" value="1" />
+          <entry key="XML" value="253" />
+          <entry key="YAML" value="84" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="class" value="6" />
+          <entry key="dummy" value="2" />
+          <entry key="html" value="84" />
+          <entry key="java" value="17242" />
+          <entry key="txt" value="389" />
+          <entry key="xml" value="2570" />
+          <entry key="yml" value="585" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CLASS" value="6" />
+          <entry key="HTML" value="84" />
+          <entry key="JAVA" value="17242" />
+          <entry key="PLAIN_TEXT" value="391" />
+          <entry key="SQL" value="238" />
+          <entry key="XML" value="2332" />
+          <entry key="YAML" value="585" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="zhongz-rental-service" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/WechatPayUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-21">
+              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayConfigImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2992">
+              <caret line="137" column="64" selection-start-line="137" selection-start-column="64" selection-end-line="137" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3872">
+              <caret line="194" column="25" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1980">
+              <caret line="114" column="19" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>selectZhongzEstateList1</find>
+      <find>selectZhongzHouseList1</find>
+      <find>selectZhongzHouseRentList</find>
+      <find>selectZhongzUserInvitedList</find>
+      <find>selectZhongzOrderDayMaxOrder</find>
+      <find>selectZhongzServiceOrderByUserHouseAndType</find>
+      <find>selectZhongzLatestContractByUserAndHouse</find>
+      <find>selectZhongzServiceOrderDayMaxOrder</find>
+      <find>autoReport</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/PageUtils.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/domain/ZhongzRequestServiceType.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/mapper/ZhongzRequestServiceTypeMapper.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzRequestServiceTypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/IZhongzRequestServiceTypeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhongz/rental/rest/ZhongzRequestServiceTypeController.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzHouseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/IZhongzHouseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhongz/rental/rest/ZhongzHouseController.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/resources/mapper/zhongz/rental/ZhongzRequestServiceTypeMapper.xml" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/returnParam/ZhongzUserInvitedReturnParam.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/resources/mapper/zhongz/rental/ZhongzUserMapper.xml" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/mapper/ZhongzUserMapper.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/domain/ZhongzUser.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/domain/ZhongzCoupon.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/resources/mapper/zhongz/rental/ZhongzContractMapper.xml" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/mapper/ZhongzContractMapper.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/resources/mapper/zhongz/rental/ZhongzOrderMapper.xml" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/domain/ZhongzServiceOrder.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/mapper/ZhongzServiceOrderMapper.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/result/ServiceOrderResult.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/resources/mapper/zhongz/rental/ZhongzServiceOrderMapper.xml" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/domain/ZhongzManager.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/resources/mapper/zhongz/rental/ZhongzManagerMapper.xml" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPay.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayRequest.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayUtil.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzPictureParam.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/IZhongzPictrueService.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/result/PictureResult.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/IZhongzPictureService.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/OrderUtils.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzUserServiceOrderParam.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzPictureServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhongz/rental/rest/ZhongzPictureController.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzUserServiceOrderWechatPayParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhongz/rental/rest/ZhongzServiceOrderController.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzServiceOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/IZhongzServiceOrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/resources/config/application.yml" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/Md5Utils.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/XMLUtil4jdom.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/pom.xml" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/result/WechatPrePayResult.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/PayToolUtil.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/WxPayConfigImpl.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WxPayConfigImpl.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayConfigImpl.java" />
+        <option value="$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/WechatPayUtils.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="zhongz-rental-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="zhongz-rental-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="zhongz-rental-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="zhongz-rental-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="6" />
+    <option name="width" value="1914" />
+    <option name="height" value="975" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="wxpay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="HttpClientUtils.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="param" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="param" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="returnParam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongz-rental-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongz-rental-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557879129437" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zhongz-rental-management" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git_projects\zhongz-rental-common\src\main\java\com\zhongz\rental\common\utils\wxpay" />
+      <recent name="E:\git_projects\zhongz-rental-common\src\main\resources\mapper\zhongz\rental" />
+      <recent name="E:\git_projects\zhongz-rental-service\src\main\java\com\zhongz\rental\rest" />
+      <recent name="E:\git_projects\zhongz-rental-common\src\main\java\com\zhongz\rental\service\impl" />
+      <recent name="E:\git_projects\zhongz-rental-common\src\main\java\com\zhongz\rental\service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zhongz.rental.result" />
+      <recent name="com.zhongz.rental.common.utils" />
+      <recent name="com.zhongz.rental.param" />
+      <recent name="com.zhongz.rental.rest" />
+      <recent name="com.zhongz.rental.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\git_projects\zhongz-rental-service\src\main\resources\templates" />
+      <recent name="E:\git_projects\zhongz-rental-service\src\main\java\com\zhongz\rental\rest" />
+      <recent name="E:\git_projects\zhongz-rental-common\src\main\resources\mapper\zhongz\rental" />
+      <recent name="E:\git_projects\zhongz-rental-common\src\main\java\com\zhongz\rental\service\impl" />
+      <recent name="E:\git_projects\zhongz-rental-common\src\main\java\com\zhongz\rental\service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ServiceApplication">
+    <configuration name="CodeGenUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhongz.rental.common.utils.CodeGenUtils" />
+      <module name="zhongz-rental-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhongz.rental.common.utils.wxpay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClientUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhongz.rental.common.utils.HttpClientUtils" />
+      <module name="zhongz-rental-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhongz.rental.common.utils.wxpay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClientUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhongz.rental.common.utils.HttpClientUtils" />
+      <module name="zhongz-rental-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhongz.rental.common.utils.wxpay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmsSendUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhongz.rental.common.utils.SmsSendUtils" />
+      <module name="zhongz-rental-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhongz.rental.common.utils.wxpay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zhongz-rental-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhongz.rental.ServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ServiceApplication" />
+      <item itemvalue="Application.HttpClientUtils" />
+      <item itemvalue="Application.SmsSendUtils" />
+      <item itemvalue="Application.CodeGenUtils" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CodeGenUtils" />
+        <item itemvalue="Application.SmsSendUtils" />
+        <item itemvalue="Application.HttpClientUtils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator.admin-PC\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\git_projects\zhongz-rental-common" />
+          <option name="myCopyRoot" value="E:\git_projects\zhongz-rental-common" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\git_projects\zhongz-rental-common" />
+          <option name="myCopyRoot" value="E:\git_projects\zhongz-rental-common" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00f020bb-f29a-48ab-89c5-aabbe63364bd" name="Default Changelist" comment="" />
+      <created>1554722267882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554722267882</updated>
+      <workItem from="1554722269235" duration="3424000" />
+      <workItem from="1554769709868" duration="22182000" />
+      <workItem from="1554804256478" duration="92000" />
+      <workItem from="1554857382864" duration="22565000" />
+      <workItem from="1554941511852" duration="11820000" />
+      <workItem from="1554957771413" duration="626000" />
+      <workItem from="1555028082827" duration="26038000" />
+      <workItem from="1555286531076" duration="8198000" />
+      <workItem from="1555306720469" duration="17699000" />
+      <workItem from="1555372989957" duration="2916000" />
+      <workItem from="1555377931675" duration="20845000" />
+      <workItem from="1555459443903" duration="10907000" />
+      <workItem from="1555480267610" duration="17008000" />
+      <workItem from="1555547415434" duration="22391000" />
+      <workItem from="1555577067994" duration="5262000" />
+      <workItem from="1555632949615" duration="10307000" />
+      <workItem from="1555649983141" duration="12345000" />
+      <workItem from="1555663207661" duration="5226000" />
+      <workItem from="1555670709823" duration="4510000" />
+      <workItem from="1555893436578" duration="32731000" />
+      <workItem from="1555977862759" duration="7107000" />
+      <workItem from="1555998204746" duration="132000" />
+      <workItem from="1556074891879" duration="735000" />
+      <workItem from="1556080826121" duration="657000" />
+      <workItem from="1556154931425" duration="1168000" />
+      <workItem from="1556168465245" duration="599000" />
+      <workItem from="1556244795572" duration="22005000" />
+      <workItem from="1556410948404" duration="14493000" />
+      <workItem from="1556497675464" duration="21200000" />
+      <workItem from="1556524815012" duration="7200000" />
+      <workItem from="1556532263817" duration="654000" />
+      <workItem from="1556533561754" duration="1379000" />
+      <workItem from="1556583248825" duration="5875000" />
+      <workItem from="1556611208426" duration="1161000" />
+      <workItem from="1557019902185" duration="18520000" />
+      <workItem from="1557107170861" duration="182000" />
+      <workItem from="1557110241243" duration="44000" />
+      <workItem from="1557203988141" duration="18433000" />
+      <workItem from="1557276793934" duration="8651000" />
+      <workItem from="1557290459934" duration="22823000" />
+      <workItem from="1557706637035" duration="6270000" />
+      <workItem from="1557717131299" duration="1433000" />
+      <workItem from="1557721952136" duration="14602000" />
+      <workItem from="1557795992161" duration="8142000" />
+      <workItem from="1557808279473" duration="13091000" />
+      <workItem from="1557822891385" duration="1184000" />
+      <workItem from="1557824533507" duration="8722000" />
+      <workItem from="1557878860240" duration="267000" />
+    </task>
+    <task id="LOCAL-00001" summary="test commit.">
+      <created>1554722441178</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554722441178</updated>
+    </task>
+    <task id="LOCAL-00002" summary="house search feature.">
+      <created>1554802747576</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554802747576</updated>
+    </task>
+    <task id="LOCAL-00003" summary="房屋搜索、排序相关.">
+      <created>1554891851948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554891851948</updated>
+    </task>
+    <task id="LOCAL-00004" summary="各种简单列表相关；修改房屋搜索相关。">
+      <created>1554953494374</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554953494374</updated>
+    </task>
+    <task id="LOCAL-00005" summary="提交前台所有房源相关接口.">
+      <created>1555063207168</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555063207169</updated>
+    </task>
+    <task id="LOCAL-00006" summary="提交登录、验证码相关接口.">
+      <created>1555324009144</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555324009144</updated>
+    </task>
+    <task id="LOCAL-00007" summary="提交房源展示文件、发送短信验证码、前端活动展示接口">
+      <created>1555411836112</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1555411836112</updated>
+    </task>
+    <task id="LOCAL-00008" summary="修改bug,提交登录、验证码、预约订单相关接口.">
+      <created>1555500256119</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1555500256119</updated>
+    </task>
+    <task id="LOCAL-00009" summary="提交预约订单、续约订单、续约合同、我的合同接口.">
+      <created>1555580515330</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1555580515331</updated>
+    </task>
+    <task id="LOCAL-00010" summary="调整根依赖结构，Redis配置类和配置文件项转移到根依赖；增加对根依赖包的显式扫描.">
+      <created>1555582188728</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1555582188728</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test pass.">
+      <created>1555664494384</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555664494384</updated>
+    </task>
+    <task id="LOCAL-00012" summary="morning commit:successful restapi and solved swagger interceptor cross.">
+      <created>1555902898861</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1555902898861</updated>
+    </task>
+    <task id="LOCAL-00013" summary="优惠券、邀请列表接口.">
+      <created>1555935608317</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555935608317</updated>
+    </task>
+    <task id="LOCAL-00014" summary="文件上传相关.">
+      <created>1556428732928</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1556428732928</updated>
+    </task>
+    <task id="LOCAL-00015" summary="提交一期全部接口.">
+      <created>1556531902556</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1556531902556</updated>
+    </task>
+    <task id="LOCAL-00016" summary="活动详情页WebView接口.">
+      <created>1557039390885</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1557039390885</updated>
+    </task>
+    <task id="LOCAL-00017" summary="提交报修订单接口.">
+      <created>1557309024566</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1557309024566</updated>
+    </task>
+    <task id="LOCAL-00018" summary="提交保洁订单接口.去掉查询最大订单号的逻辑删除标识条件防止唯一主键冲突.">
+      <created>1557315269921</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1557315269921</updated>
+    </task>
+    <task id="LOCAL-00019" summary="提交报修、保洁除支付外接口.">
+      <created>1557742608013</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1557742608013</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="463821000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49565217" visible="true" weight="0.29317698" />
+      <window_info id="Structure" order="1" sideWeight="0.5043478" side_tool="true" weight="0.2771855" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5014749" side_tool="true" weight="0.24040511" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22426869" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2524377" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="SVN Repositories" order="14" weight="0.32900432" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49840763" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49840763" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" sideWeight="0.49522293" weight="0.32995737" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5047771" side_tool="true" weight="0.32995737" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49710146" visible="true" weight="0.2771855" />
+      <window_info id="Structure" order="1" sideWeight="0.5028986" side_tool="true" weight="0.26918977" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5014749" side_tool="true" weight="0.24040511" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31960997" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2524377" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="SVN Repositories" order="14" weight="0.32900432" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49840763" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49840763" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" sideWeight="0.49522293" weight="0.32995737" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5047771" side_tool="true" weight="0.32995737" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test commit." />
+    <MESSAGE value="house search feature." />
+    <MESSAGE value="房屋搜索、排序相关." />
+    <MESSAGE value="各种简单列表相关；修改房屋搜索相关。" />
+    <MESSAGE value="提交前台所有房源相关接口." />
+    <MESSAGE value="提交登录、验证码相关接口." />
+    <MESSAGE value="提交房源展示文件、发送短信验证码、前端活动展示接口" />
+    <MESSAGE value="修改bug,提交登录、验证码、预约订单相关接口." />
+    <MESSAGE value="提交预约订单、续约订单、续约合同、我的合同接口." />
+    <MESSAGE value="调整根依赖结构，Redis配置类和配置文件项转移到根依赖；增加对根依赖包的显式扫描." />
+    <MESSAGE value="test pass." />
+    <MESSAGE value="morning commit:successful restapi and solved swagger interceptor cross." />
+    <MESSAGE value="优惠券、邀请列表接口." />
+    <MESSAGE value="文件上传相关." />
+    <MESSAGE value="提交一期全部接口." />
+    <MESSAGE value="活动详情页WebView接口." />
+    <MESSAGE value="提交报修订单接口." />
+    <MESSAGE value="提交保洁订单接口.去掉查询最大订单号的逻辑删除标识条件防止唯一主键冲突." />
+    <MESSAGE value="提交报修、保洁除支付外接口." />
+    <option name="LAST_COMMIT_MESSAGE" value="提交报修、保洁除支付外接口." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzValidateCodeServiceImpl.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzUserServiceImpl.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/OrderUtils.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzHouseServiceImpl.java</url>
+          <line>162</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzHouseServiceImpl.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzOrderServiceImpl.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzOrderServiceImpl.java</url>
+          <line>148</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzContractServiceImpl.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzContractServiceImpl.java</url>
+          <line>128</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/interceptor/LoginInterceptor.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzCouponServiceImpl.java</url>
+          <line>152</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzCouponServiceImpl.java</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzCouponServiceImpl.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzUserServiceImpl.java</url>
+          <line>304</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzUserServiceImpl.java</url>
+          <line>431</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzUserServiceImpl.java</url>
+          <line>396</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/zhongz/rental/zhongz-rental-management-common/1.0.0/zhongz-rental-management-common-1.0.0.jar!/com/ruoyi/common/core/page/TableSupport.class</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzCommentServiceImpl.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzEventServiceImpl.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzServiceOrderServiceImpl.java</url>
+          <line>366</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzServiceOrderServiceImpl.java</url>
+          <line>448</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzServiceOrderServiceImpl.java</url>
+          <line>243</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzPictureServiceImpl.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzCommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2128">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzOrderParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzUserParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzUserOrderParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/domain/ZhongzContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="79" column="28" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzContractServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/result/ServiceOrderResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/IZhongzPictureService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/domain/ZhongzServiceOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" selection-start-line="21" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzUserServiceOrderWechatPayParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzUserServiceOrderParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhongz/rental/rest/ZhongzServiceOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/IZhongzServiceOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="122" column="17" lean-forward="true" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/interceptor/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/param/ZhongzPictureParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzServiceOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="438" column="7" selection-start-line="438" selection-start-column="7" selection-end-line="438" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/OrderUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/SqlUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/CodeGenUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzPictureServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/service/impl/ZhongzUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhongz/rental/rest/ZhongzPictureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/resources/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/returnParam/ZhongzUserInvitedReturnParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/result/PictureResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar!/org/apache/http/entity/BasicHttpEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar!/org/apache/http/HttpEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_181/src.zip!/java/nio/charset/Charset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="466" column="53" selection-start-line="466" selection-start-column="42" selection-end-line="466" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar!/org/apache/http/Consts.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar!/org/apache/http/entity/StringEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar!/org/apache/http/entity/ContentType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="304" column="49" selection-start-line="304" selection-start-column="46" selection-end-line="304" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="154" column="25" lean-forward="true" selection-start-line="154" selection-start-column="25" selection-end-line="154" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/Md5Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/PageUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/XMLUtil4jdom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/result/base/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/result/WechatPrePayResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/PayToolUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/IWXPayDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-354">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4878">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayXmlUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/WechatPayUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayConfigImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="137" column="64" selection-start-line="137" selection-start-column="64" selection-end-line="137" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3872">
+          <caret line="194" column="25" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="114" column="19" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../zhongz-rental-common/src/main/java/com/zhongz/rental/common/utils/wxpay/WXPayConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>zhongz-rental-service</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

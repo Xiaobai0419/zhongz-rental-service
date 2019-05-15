@@ -1,0 +1,165 @@
+package com.zhongz.rental.rest;
+
+import com.zhongz.rental.domain.ZhongzServiceOrder;
+import com.zhongz.rental.param.ZhongzUserServiceOrderParam;
+import com.zhongz.rental.result.ServiceOrderResult;
+import com.zhongz.rental.result.base.Result;
+import com.zhongz.rental.service.IZhongzServiceOrderService;
+import io.swagger.annotations.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import com.ruoyi.common.core.controller.BaseController;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletRequest;
+
+/**
+ * 服务订单 信息操作处理
+ * 
+ * @author ruoyi
+ * @date 2019-05-07
+ */
+@Api(tags = "zhongz-service-order")
+@Controller
+@RequestMapping("/system/zhongzServiceOrder")
+public class ZhongzServiceOrderController extends BaseController
+{
+	@Autowired
+	private IZhongzServiceOrderService zhongzServiceOrderService;
+
+	/**
+	 * 按id查询报修/保洁订单详情
+	 */
+	@ApiOperation(value="按id查询报修/保洁订单详情")
+	@PostMapping("/single")
+	@ResponseBody
+	public ServiceOrderResult single(ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{
+		return zhongzServiceOrderService.selectZhongzServiceOrderById(zhongzUserServiceOrderParam.getId());
+	}
+
+	/**
+	 * 查询（分页，几条按传入pageSize参数限制）报修订单列表
+	 */
+	@ApiOperation(value="查询（分页，几条按传入pageSize参数限制）报修订单列表")
+	@PostMapping("/listUserRepair")
+	@ResponseBody
+	public Result<ZhongzServiceOrder> listUserRepair(ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{
+		return zhongzServiceOrderService.selectZhongzServiceOrderUserRepairList(zhongzUserServiceOrderParam);
+	}
+
+	/**
+	 * 查询（分页，几条按传入pageSize参数限制）已报修订单列表
+	 */
+	@ApiOperation(value="查询（分页，几条按传入pageSize参数限制）已报修订单列表")
+	@PostMapping("/listUserRepairStatus0")
+	@ResponseBody
+	public Result<ZhongzServiceOrder> listUserRepairStatus0(ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{
+		return zhongzServiceOrderService.selectZhongzServiceOrderUserRepairListByStatus0(zhongzUserServiceOrderParam);
+	}
+
+	/**
+	 * 查询（分页，几条按传入pageSize参数限制）已预约报修订单列表
+	 */
+	@ApiOperation(value="查询（分页，几条按传入pageSize参数限制）已预约报修订单列表")
+	@PostMapping("/listUserRepairStatus1")
+	@ResponseBody
+	public Result<ZhongzServiceOrder> listUserRepairStatus1(ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{
+		return zhongzServiceOrderService.selectZhongzServiceOrderUserRepairListByStatus1(zhongzUserServiceOrderParam);
+	}
+
+	/**
+	 * 查询（分页，几条按传入pageSize参数限制）已完成报修订单列表
+	 */
+	@ApiOperation(value="查询（分页，几条按传入pageSize参数限制）已完成报修订单列表")
+	@PostMapping("/listUserRepairStatus2")
+	@ResponseBody
+	public Result<ZhongzServiceOrder> listUserRepairStatus2(ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{
+		return zhongzServiceOrderService.selectZhongzServiceOrderUserRepairListByStatus2(zhongzUserServiceOrderParam);
+	}
+
+	/**
+	 * 查询（分页，几条按传入pageSize参数限制）保洁订单列表
+	 */
+	@ApiOperation(value="查询（分页，几条按传入pageSize参数限制）保洁订单列表")
+	@PostMapping("/listUserCleaning")
+	@ResponseBody
+	public Result<ZhongzServiceOrder> listUserCleaning(ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{
+		return zhongzServiceOrderService.selectZhongzServiceOrderUserCleaningList(zhongzUserServiceOrderParam);
+	}
+
+	/**
+	 * 查询（分页，几条按传入pageSize参数限制）已下单保洁订单列表
+	 */
+	@ApiOperation(value="查询（分页，几条按传入pageSize参数限制）已下单保洁订单列表")
+	@PostMapping("/listUserCleaningStatus0")
+	@ResponseBody
+	public Result<ZhongzServiceOrder> listUserCleaningStatus0(ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{
+		return zhongzServiceOrderService.selectZhongzServiceOrderUserCleaningListByStatus0(zhongzUserServiceOrderParam);
+	}
+
+	/**
+	 * 查询（分页，几条按传入pageSize参数限制）已预约保洁订单列表
+	 */
+	@ApiOperation(value="查询（分页，几条按传入pageSize参数限制）已预约保洁订单列表")
+	@PostMapping("/listUserCleaningStatus1")
+	@ResponseBody
+	public Result<ZhongzServiceOrder> listUserCleaningStatus1(ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{
+		return zhongzServiceOrderService.selectZhongzServiceOrderUserCleaningListByStatus1(zhongzUserServiceOrderParam);
+	}
+
+	/**
+	 * 查询（分页，几条按传入pageSize参数限制）已完成保洁订单列表
+	 */
+	@ApiOperation(value="查询（分页，几条按传入pageSize参数限制）已完成保洁订单列表")
+	@PostMapping("/listUserCleaningStatus2")
+	@ResponseBody
+	public Result<ZhongzServiceOrder> listUserCleaningStatus2(ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{
+		return zhongzServiceOrderService.selectZhongzServiceOrderUserCleaningListByStatus2(zhongzUserServiceOrderParam);
+	}
+
+	/**
+	 * 新增报修服务订单
+	 */
+	@ApiOperation(value="新增报修服务订单")
+	@PostMapping(value = "/addRepair")
+	@ResponseBody
+	public Result addRepair(HttpServletRequest request, ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{		
+		return zhongzServiceOrderService.insertZhongzServiceOrder(zhongzUserServiceOrderParam,request);
+	}
+
+	/**
+	 * 新增保洁服务订单
+	 */
+	@ApiOperation(value="新增保洁服务订单")
+	@PostMapping(value = "/addCleaning")
+	@ResponseBody
+	public Result addCleaning(HttpServletRequest request, ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{
+		return zhongzServiceOrderService.insertZhongzServiceCleaningOrder(zhongzUserServiceOrderParam,request);
+	}
+
+	/**
+	 * 取消订单
+	 */
+	@ApiOperation(value="取消订单")
+	@PostMapping("/cancel")
+	@ResponseBody
+	public Result cancel(ZhongzUserServiceOrderParam zhongzUserServiceOrderParam)
+	{
+		return zhongzServiceOrderService.cancelZhongzServiceOrder(zhongzUserServiceOrderParam.getId());
+	}
+}

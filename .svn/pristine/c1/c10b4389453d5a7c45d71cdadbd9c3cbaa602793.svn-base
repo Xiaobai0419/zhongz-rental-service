@@ -1,0 +1,78 @@
+package com.zhongz.rental.rest;
+
+import java.util.List;
+
+import com.zhongz.rental.domain.ZhongzOrder;
+import com.zhongz.rental.param.ZhongzUserOrderParam;
+import com.zhongz.rental.result.base.Result;
+import com.zhongz.rental.service.IZhongzOrderService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import com.ruoyi.common.annotation.Log;
+import com.ruoyi.common.enums.BusinessType;
+import com.ruoyi.common.core.controller.BaseController;
+import com.ruoyi.common.core.page.TableDataInfo;
+import com.ruoyi.common.core.domain.AjaxResult;
+
+/**
+ * 订单 信息操作处理
+ * 
+ * @author ruoyi
+ * @date 2019-04-17
+ */
+@Controller
+@RequestMapping("/system/zhongzOrder")
+public class ZhongzOrderController extends BaseController
+{
+	@Autowired
+	private IZhongzOrderService zhongzOrderService;
+	
+	/**
+	 * 查询订单列表
+	 */
+	@PostMapping("/list")
+	@ResponseBody
+	public TableDataInfo list(ZhongzOrder zhongzOrder)
+	{
+		startPage();
+        List<ZhongzOrder> list = zhongzOrderService.selectZhongzOrderList(zhongzOrder);
+		return getDataTable(list);
+	}
+	
+	/**
+	 * 新增保存订单--接收key/value参数
+	 */
+	@Log(title = "订单", businessType = BusinessType.INSERT)
+	@PostMapping("/add")
+	@ResponseBody
+	public Result addSave(ZhongzUserOrderParam zhongzUserOrderParam)
+	{		
+		return zhongzOrderService.insertZhongzOrder(zhongzUserOrderParam);
+	}
+
+	/**
+	 * 修改保存订单
+	 */
+	@Log(title = "订单", businessType = BusinessType.UPDATE)
+	@PostMapping("/edit")
+	@ResponseBody
+	public AjaxResult editSave(ZhongzOrder zhongzOrder)
+	{		
+		return toAjax(zhongzOrderService.updateZhongzOrder(zhongzOrder));
+	}
+	
+	/**
+	 * 删除订单
+	 */
+	@Log(title = "订单", businessType = BusinessType.DELETE)
+	@PostMapping( "/remove")
+	@ResponseBody
+	public AjaxResult remove(String ids)
+	{		
+		return toAjax(zhongzOrderService.deleteZhongzOrderByIds(ids));
+	}
+	
+}
